@@ -1,0 +1,7 @@
+.nav-bar{
+    background-color: cadetblue;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}

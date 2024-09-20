@@ -1,0 +1,29 @@
+.directory{
+    bkackground-color: gray;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    baclkground-color: aqua;
+    font-size: 2.5em;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.filter{
+    max-width: 8rem;
+}
+
+.data{
+    /* background-color: rgb(227, 230, 230);
+    height: 100vh; */
+}
