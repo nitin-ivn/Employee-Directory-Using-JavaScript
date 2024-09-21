@@ -38,13 +38,16 @@
 
         <div class = "directory">
             <div class="title-container">
-                <p class = "title">Employee Directory</p>
-                <button class = "btn btn-primary add-person me-2">Add Person</button>
+                <p class = "title m-0">Employee Directory</p>
             </div>
-            <div class = "data">
+            <div class = "data px-2">
+                <div class = "add">
+                  <p class = "m-0 fw-bold">Total : 82 Employees</p>
+                  <button class = "btn btn-primary add-person">Add Person</button>
+                </div>
                 <div class = "mt-2">
                     <form class="d-flex" role="search">
-                        <select class="form-control mx-2 filter" aria-label="Default select example">
+                        <select class="form-control me-2 filter" aria-label="Default select example">
                             <option selected>Department</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -59,6 +62,17 @@
                         <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-dark" type="submit">Search</button>
                     </form>
+                </div>
+                
+                <div class="details-grid mt-2">
+                  <div class="employee-container border p-2">
+                    <img src="https://picsum.photos/100/100" alt="">
+                    <div>
+                      <p>John Watson</p>
+                      <p>Janitor</p>
+                      <p>+914593127247</p>
+                    </div>
+                  </div>
                 </div>
             </div>
             
