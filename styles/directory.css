@@ -1,9 +1,6 @@
 .directory{
     bkackground-color: gray;
-}
-
-.data{
-    max-width: 1500px;
+    max-width: 90rem;
 }
 
 .title-container{
@@ -23,7 +20,6 @@
 }
 
 .title{
-    baclkground-color: aqua;
     font-size: 2.8em;
 }
 
@@ -36,7 +32,123 @@
     max-width: 8rem;
 }
 
+.details-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 110px;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
 .employee-container{
     display: inline-flex;
-    height: 8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.employee-container:hover{
+    transform : translateY(-5px);
+}
+
+.img-container{
+    width: 8rem;
+}
+
+.employee-image{
+    max-width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.employee-name{
+    font-weight: bold;
+}
+
+.employee-occupation{
+    font-size: 0.9em;
+}
+
+.employee-department{
+    font-size: 0.8em;
+    color: rgb(131, 126, 126);
+}
+
+.info-btn{
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.8em;
+    width: 3rem;
+    height: 1.5rem;
+    transition: all 0.3s;
+}
+
+.info-btn:hover{
+    background-color: rgb(53, 205, 255);
+}
+
+@media only screen and (max-width: 825px){
+    .details-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 110px;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 565px){
+    .details-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .details-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 110px;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+}
+
+.item{
+    /* background-color: #24282c; */
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    padding-inline: 5px;
+    padding-block: 10px;
+}
+
+.filters{
+    color: white;
+    text-decoration: none;
+    /* background-color: rgb(56, 54, 54); */
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+}
+
+.sub-menu {  
+    padding: 10px;  
+    /* background-color: #232629; */
+    border-radius: 4px;  
+    margin-top: 5px;
+}  
+
+.sub-item{
+    padding: 10px;  
+    /* background-color: #232629; */
+    border-radius: 4px;  
+    margin-top: 5px;
+    color:white;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
 }

@@ -5,3 +5,15 @@
     position: fixed;
     top: 0;
 }
+
+.profile{
+    border-radius: 50%;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.profile-btn{
+    background-color: transparent;
+    border: none;
+}
