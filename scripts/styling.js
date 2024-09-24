@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     buttons.forEach(button => {  
         button.addEventListener("click", function(event) {  
             event.preventDefault();  
-            const targetId = this.getAttribute("data-target");  // Get the target ID  
-            const subMenu = document.getElementById(targetId);  // Select the sub-menu by ID  
+            const targetId = this.getAttribute("data-target");
+            const subMenu = document.getElementById(targetId); 
             subMenu.style.display = subMenu.style.display === "none" ? "block" : "none";  
         });  
     });  
