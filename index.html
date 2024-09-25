@@ -61,27 +61,31 @@
                 <div class="item">  
                     <a class="filters sub-btn" data-target = "subMenu1" href="#">Department</a>  
                     <div class="sub-menu" id="subMenu1" style="display: none;">  
-                        <a href="#" class="sub-item sub-btn" data-target="subMenu1-1">HR</a>
+                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "HR" data-target="subMenu1-1">
+                          HR</a>
                         <div class = "sub-menu pt-0" id = "subMenu1-1" style="display: none;">
-                          <a href="#" class="sub-item">HR Manager</a>
-                          <a href="#" class="sub-item">Recruiter</a>
+                          <a href="#" class="sub-item js-role">HR Manager</a>
+                          <a href="#" class="sub-item js-role">Recruiter</a>
                         </div>
-                        <a href="#" class="sub-item sub-btn" data-target="subMenu1-2">Development Department</a>
+                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "Develeopment" data-target="subMenu1-2">
+                          Development Department</a>
                         <div class = "sub-menu pt-0" id = "subMenu1-2" style="display: none;">
-                          <a href="#" class="sub-item">Fontend Developer</a>
-                          <a href="#" class="sub-item">Backend Developer</a>
-                          <a href="#" class="sub-item">FullStack Developer</a>
-                          <a href="#" class="sub-item">Mobile Developer</a>
+                          <a href="#" class="sub-item js-role">Frontend Developer</a>
+                          <a href="#" class="sub-item js-role">Backend Developer</a>
+                          <a href="#" class="sub-item js-role">FullStack Developer</a>
+                          <a href="#" class="sub-item js-role">Mobile Developer</a>
                         </div>
-                        <a href="#" class="sub-item sub-btn" data-target="subMenu1-3">Product Management</a>
+                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "Product Management" data-target="subMenu1-3">
+                          Product Management</a>
                         <div class = "sub-menu pt-0" id = "subMenu1-3" style="display: none;">
-                          <a href="#" class="sub-item">Product Manager</a>
-                          <a href="#" class="sub-item">Product Owner</a>
+                          <a href="#" class="sub-item js-role">Product Manager</a>
+                          <a href="#" class="sub-item js-role">Product Owner</a>
                         </div>
-                        <a href="#" class="sub-item sub-btn" data-target="subMenu1-4">IT Department</a>
+                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "IT" data-target="subMenu1-4">
+                          IT Department</a>
                         <div class = "sub-menu pt-0" id = "subMenu1-4" style="display: none;">
-                          <a href="#" class="sub-item">System Administrator</a>
-                          <a href="#" class="sub-item">Network Engineer</a>
+                          <a href="#" class="sub-item js-role">System Administrator</a>
+                          <a href="#" class="sub-item js-role">Network Engineer</a>
                         </div>
                     </div>  
                 </div>
@@ -205,5 +209,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/scripts/styling.js"></script>
     <script type="module" src="/scripts/directory.js"></script>
+    <script type="module" src="/scripts/sorts.js"></script>
 </body>
 </html>

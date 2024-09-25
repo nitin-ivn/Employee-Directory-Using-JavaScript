@@ -1,31 +1,5 @@
-const Departments = Object.freeze({
-    HR: "HR",
-    Development: "Develeopment",
-    ProductManagement: "Product Management",
-    ITDepartment: "IT"
-});
-
-const HRDepartmentRoles = Object.freeze({
-    HRManager: "HR Manager",
-    Recruiter: "Recruiter"
-})
-
-const developmentDepartmentRoles = Object.freeze({
-    frontEndDev: "Frontend Developer",
-    backEndDev: "Backend Developer",
-    fullStackDev: "FullStack Developer",
-    MobileDev: "Mobile Developer"
-});
-
-const ProductManagementRoles = Object.freeze({
-    productManager: "Product Manager",
-    productOwner: "Product Owner"
-});
-
-const ITDepartmentRoles = Object.freeze({
-    systemAdministrator: "System Administrator",
-    networkEngineer: "Network Engineer"
-});
+import { Departments,HRDepartmentRoles,ProductManagementRoles,
+    developmentDepartmentRoles,ITDepartmentRoles } from "./departments.js";
 
 
 class Employee{
@@ -65,13 +39,13 @@ export let employee = [
         developmentDepartmentRoles.frontEndDev
     ),
     new Employee('3s2uth9948tl',
-        "/images/employee/e4.webp",
+        "/images/employee/e4.jpg",
         "Dorsey Mcclure",
         Departments.Development,
         developmentDepartmentRoles.backEndDev
     ),
     new Employee('pzvdv2eit5dv',
-        "/images/employee/e5.webp",
+        "/images/employee/e5.jpg",
         "Carlos Warren",
         Departments.Development,
         developmentDepartmentRoles.MobileDev
@@ -81,6 +55,12 @@ export let employee = [
         "Mamie Key",
         Departments.Development,
         developmentDepartmentRoles.fullStackDev
+    ),
+    new Employee('7m8jxvehsw20',
+        "/images/employee/e7.avif",
+        "Bret Knox",
+        Departments.Development,
+        developmentDepartmentRoles.frontEndDev
     ), 
 ];
 
