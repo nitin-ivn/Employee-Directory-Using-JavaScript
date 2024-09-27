@@ -1,0 +1,39 @@
+<!-- <div class="item">
+                <img src="/images/icons/department2.png" class = "department-icon" alt="">
+                <a class="filters sub-btn" data-target = "subMenu1" href="#">Department</a>  
+                <div class="sub-menu" id="subMenu1" style="display: none;">  
+                    <a href="#" class="sub-item sub-btn js-sub-item" data-department = "HR" data-target="subMenu1-1">
+                        HR</a>
+                    <div class = "sub-menu pt-0" id = "subMenu1-1" style="display: none;">
+                        <a href="#" class="sub-item js-role" data-role = "HR Manager">HR Manager</a>
+                        <a href="#" class="sub-item js-role" data-role = "Recruiter">Recruiter</a>
+                    </div>
+                    <a href="#" class="sub-item sub-btn js-sub-item" data-department = "Develeopment" data-target="subMenu1-2">
+                        Development Department</a>
+                    <div class = "sub-menu pt-0" id = "subMenu1-2" style="display: none;">
+                        <a href="#" class="sub-item js-role" data-role = "Frontend Developer">Frontend Developer</a>
+                        <a href="#" class="sub-item js-role" data-role = "Backend Developer">Backend Developer</a>
+                        <a href="#" class="sub-item js-role" data-role = "FullStack Developer">FullStack Developer</a>
+                        <a href="#" class="sub-item js-role" data-role = "Mobile Developer">Mobile Developer</a>
+                    </div>
+                    <a href="#" class="sub-item sub-btn js-sub-item" data-department = "Product Management" data-target="subMenu1-3">
+                        Product Management</a>
+                    <div class = "sub-menu pt-0" id = "subMenu1-3" style="display: none;">
+                        <a href="#" class="sub-item js-role" data-role = "Product Manager">Product Manager</a>
+                        <a href="#" class="sub-item js-role" data-role = "Product Owner">Product Owner</a>
+                    </div>
+                    <a href="#" class="sub-item sub-btn js-sub-item" data-department = "IT" data-target="subMenu1-4">
+                        IT Department</a>
+                    <div class = "sub-menu pt-0" id = "subMenu1-4" style="display: none;">
+                        <a href="#" class="sub-item js-role" data-role = "System Administrator">System Administrator</a>
+                        <a href="#" class="sub-item js-role" data-role = "Network Engineer">Network Engineer</a>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="item">  
+                <a class="filters sub-btn" data-target = "subMenu2" href="#">Locality</a>  
+                <div class="sub-menu" id="subMenu2" style="display: none;">  
+                    <a href="#" class="sub-item">sub2</a>  
+                </div>  
+            </div>   -->

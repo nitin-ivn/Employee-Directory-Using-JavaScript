@@ -1,4 +1,4 @@
-import { employee } from "../data/employee.js";
+import { employee,findCountOfDepartment,findCountOfRoles } from "../data/employee.js";
 import { renderDirectory } from "./directory.js";
 import { Departments,HRDepartmentRoles,
     ProductManagementRoles,developmentDepartmentRoles,
@@ -21,7 +21,8 @@ function sortByDepartment(){
 function sortByRole(){
     document.querySelectorAll('.js-role').forEach((button) => {
         button.addEventListener('click', ()=> {
-            const role = button.innerHTML;
+            const role = button.dataset.role;
+            console.log(role);
             let filteredEmployeeByRole = employee.filter((employeeDetails)=> {
                 if(employeeDetails.designation == role){
                     return true;
@@ -32,6 +33,14 @@ function sortByRole(){
     });
 }
 
+function removeSort(){
+    document.querySelector('.js-remove-filter').addEventListener('click', ()=> {
+        renderDirectory(employee);
+    })
+}
+
 sortByDepartment();
 sortByRole();
+removeSort();
+
 

@@ -52,50 +52,13 @@
             </div>
           </nav>
 
-          <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">  
-            <div class="offcanvas-header">  
-                <h3 class="offcanvas-title mx-auto" id="offcanvasScrollingLabel">Filters For Directory</h3>  
+          <div class="offcanvas offcanvas-start text-bg-dark custom-offcanvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">  
+            <div class="offcanvas-header">
+                <img src="/images/icons/filter.png" class = "filter-img" alt="">  
+                <h3 class="offcanvas-title mx-auto ms-1" id="offcanvasScrollingLabel">Filters For Directory</h3>  
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
             </div>
-            <div class="offcanvas-body p-0">  
-                <div class="item">  
-                    <a class="filters sub-btn" data-target = "subMenu1" href="#">Department</a>  
-                    <div class="sub-menu" id="subMenu1" style="display: none;">  
-                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "HR" data-target="subMenu1-1">
-                          HR</a>
-                        <div class = "sub-menu pt-0" id = "subMenu1-1" style="display: none;">
-                          <a href="#" class="sub-item js-role">HR Manager</a>
-                          <a href="#" class="sub-item js-role">Recruiter</a>
-                        </div>
-                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "Develeopment" data-target="subMenu1-2">
-                          Development Department</a>
-                        <div class = "sub-menu pt-0" id = "subMenu1-2" style="display: none;">
-                          <a href="#" class="sub-item js-role">Frontend Developer</a>
-                          <a href="#" class="sub-item js-role">Backend Developer</a>
-                          <a href="#" class="sub-item js-role">FullStack Developer</a>
-                          <a href="#" class="sub-item js-role">Mobile Developer</a>
-                        </div>
-                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "Product Management" data-target="subMenu1-3">
-                          Product Management</a>
-                        <div class = "sub-menu pt-0" id = "subMenu1-3" style="display: none;">
-                          <a href="#" class="sub-item js-role">Product Manager</a>
-                          <a href="#" class="sub-item js-role">Product Owner</a>
-                        </div>
-                        <a href="#" class="sub-item sub-btn js-sub-item" data-department = "IT" data-target="subMenu1-4">
-                          IT Department</a>
-                        <div class = "sub-menu pt-0" id = "subMenu1-4" style="display: none;">
-                          <a href="#" class="sub-item js-role">System Administrator</a>
-                          <a href="#" class="sub-item js-role">Network Engineer</a>
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="item">  
-                  <a class="filters sub-btn" data-target = "subMenu2" href="#">Locality</a>  
-                  <div class="sub-menu" id="subMenu2" style="display: none;">  
-                      <a href="#" class="sub-item">sub2</a>  
-                  </div>  
-              </div>
+            <div class="offcanvas-body p-3">
             </div>  
           </div>
 
@@ -112,12 +75,7 @@
                     <form class="d-flex" role="search">
                       <button class="btn btn-dark me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" 
                       aria-controls="offcanvasScrolling">Filter</button>
-                        <select class="form-control me-2 filter" aria-label="Default select example">
-                            <option selected>Department</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
+                        <button class = "btn btn-dark me-2 js-remove-filter">Remove Filters</button>
                           <select class="form-control me-2 filter" aria-label="Default select example">
                             <option selected>Something</option>
                             <option value="1">One</option>
@@ -129,83 +87,13 @@
                     </form>
                 </div>
                 
-                <div class="details-grid mt-2 js-details-grid">
-                  <div class="employee-container border p-2">
-                    <div class = "img-container">
-                      <img class = "img-fluid employee-image" src="/images/e2.avif" alt="">
-                    </div>
-                    <div class = "ms-3">
-                      <p class = "m-0 employee-name">John Watson</p>
-                      <p class = "m-0 employee-occupation">Janitor</p>
-                      <p class = "m-0 employee-department">Maintenance</p>
-                      <button class = "info-btn mt-1">Info</button>
-                    </div>
-                  </div>
-                  
-                  <div class = "employee-container border p-2">
-                    <div class = "img-container">
-                      <img class = "img-fluid employee-image" src="/images/e2.avif" alt="">
-                    </div>
-                    <div class = "ms-2">
-                      <p class = "m-0 employee-name">John Watson</p>
-                      <p class = "m-0 employee-occupation">Janitor</p>
-                      <p class = "m-0 employee-department">Maintenance</p>
-                      <button class = "info-btn mt-1">Info</button>
-                    </div>
-                  </div>
-
-                  <div class = "employee-container border p-2">
-                    <div class = "img-container">
-                      <img class = "img-fluid employee-image" src="/images/e2.avif" alt="">
-                    </div>
-                    <div class = "ms-2">
-                      <p class = "m-0 employee-name">John Watson</p>
-                      <p class = "m-0 employee-occupation">Janitor</p>
-                      <p class = "m-0 employee-department">Maintenance</p>
-                      <button class = "info-btn mt-1">Info</button>
-                    </div>
-                  </div>
-
-                  <div class = "employee-container border p-2">
-                    <div class = "img-container">
-                      <img class = "img-fluid employee-image" src="/images/e2.avif" alt="">
-                    </div>
-                    <div class = "ms-2">
-                      <p class = "m-0 employee-name">John Watson</p>
-                      <p class = "m-0 employee-occupation">Janitor</p>
-                      <p class = "m-0 employee-department">Maintenance</p>
-                      <button class = "info-btn mt-1">Info</button>
-                    </div>
-                  </div>
-
-                  <div class="employee-container border p-2">
-                    <div class = "img-container">
-                      <img class = "img-fluid employee-image" src="/images/e2.avif" alt="">
-                    </div>
-                    <div class = "ms-3">
-                      <p class = "m-0 employee-name">John Watson</p>
-                      <p class = "m-0 employee-occupation">Janitor</p>
-                      <p class = "m-0 employee-department">Maintenance</p>
-                      <button class = "info-btn mt-1">Info</button>
-                    </div>
-                  </div>
-
-                  <div class="employee-container border p-2">
-                    <div class = "img-container">
-                      <img class = "img-fluid employee-image" src="/images/e2.avif" alt="">
-                    </div>
-                    <div class = "ms-3">
-                      <p class = "m-0 employee-name">John Watson</p>
-                      <p class = "m-0 employee-occupation">Janitor</p>
-                      <p class = "m-0 employee-department">Maintenance</p>
-                      <button class = "info-btn mt-1">Info</button>
-                    </div>
-                  </div>                  
+                <div class="details-grid mt-2 js-details-grid">                 
                 </div>
             </div>
         </div>
     </div>
 
+    <script type="module" src="/scripts/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/scripts/styling.js"></script>
     <script type="module" src="/scripts/directory.js"></script>

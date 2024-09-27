@@ -2,6 +2,28 @@ import { Departments,HRDepartmentRoles,ProductManagementRoles,
     developmentDepartmentRoles,ITDepartmentRoles } from "./departments.js";
 
 
+export function findCountOfDepartment(department){
+    let count = 0;
+    employee.forEach((employeeDetails) => {
+        if(employeeDetails.department == department){
+            count++;
+        }
+    })
+
+    return count;
+}
+
+export function findCountOfRoles(role){
+    let count = 0;
+    employee.forEach((employeeDetails) => {
+        if(employeeDetails.designation == role){
+            count++;
+        }
+    })
+
+    return count;
+}
+
 class Employee{
     id = 1;
     image;

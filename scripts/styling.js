@@ -3,10 +3,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     buttons.forEach(button => {  
         button.addEventListener("click", function(event) {  
-            event.preventDefault();  
+            event.preventDefault();
+            // document.querySelector('.item-hover').classList.remove('item-hover');  
             const targetId = this.getAttribute("data-target");
             const subMenu = document.getElementById(targetId); 
-            subMenu.style.display = subMenu.style.display === "none" ? "block" : "none";  
+            if(subMenu.style.display === "none"){
+                subMenu.style.display = "block";
+                document.querySelector('.item-hover').classList.remove('item-hover');
+            }else{
+                subMenu.style.display = "none";
+                document.querySelector('.item').classList.add('item-hover');
+            }
+            // subMenu.style.display = subMenu.style.display === 
+            //"none" ? "block" : "none";  
         });  
     });  
 }); 
