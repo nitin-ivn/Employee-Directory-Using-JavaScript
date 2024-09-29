@@ -1,6 +1,15 @@
 import { Departments,HRDepartmentRoles,ProductManagementRoles,
     developmentDepartmentRoles,ITDepartmentRoles } from "./departments.js";
 
+export function findEmployee(empid){
+    let matchingemp;
+    employee.forEach((emp) => {
+        if(emp.id === empid){
+            matchingemp = emp;
+        }
+    });
+    return matchingemp;
+}
 
 export function findCountOfDepartment(department){
     let count = 0;

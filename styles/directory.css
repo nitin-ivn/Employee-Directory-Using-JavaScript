@@ -123,6 +123,10 @@
     }
 }
 
+.rem{
+    min-width: 9rem;
+}
+
 .department-icon{
     position: absolute;
     display: inline-block;

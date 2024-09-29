@@ -1,10 +1,11 @@
-import { employee } from "../data/employee.js";
+import { employee,findEmployee } from "../data/employee.js";
 
 export function renderDirectory(employee){
     let employeeHTML = ``;
     employee.forEach((employeeDetails)=> {
         employeeHTML += `
-            <div class="employee-container border p-2">
+            <div class="employee-container border p-2 js-emp-container" 
+                onclick="window.open('details.html?empId=${employeeDetails.id}');">
                 <div class = "img-container">
                     <img class = "employee-image" src="${employeeDetails.image}" alt="">
                 </div>
