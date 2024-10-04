@@ -19,3 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });  
     });  
 }); 
+
+let view = false;
+let eyeimg = document.querySelector(".password-view");
+eyeimg.addEventListener('click', ()=> {
+    eyeimg.src("/images/icons/eye.svg");
+})

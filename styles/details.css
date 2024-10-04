@@ -46,13 +46,16 @@ body{
     display: inline-block;
     /* background-color: brown; */
     min-width: 10rem;
+    margin-bottom: 10px;
 }
 
 .colon{
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .ans{
     display: inline-block;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
