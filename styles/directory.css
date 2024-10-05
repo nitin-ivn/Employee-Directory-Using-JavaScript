@@ -97,6 +97,15 @@
         row-gap: 1rem;
         column-gap: 1rem;
     }
+
+    .alpha-filter{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(13,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 0.3rem;
+        grid-column-gap: 0.3rem;
+    }
 }
 
 @media only screen and (max-width: 565px){
@@ -106,6 +115,14 @@
         grid-template-rows: 110px;
         row-gap: 1rem;
         column-gap: 1rem;
+    }
+
+    .alpha-filter{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-row-gap: 0.3rem;
+        grid-column-gap: 0.3rem;
     }
 }
 
@@ -204,3 +221,10 @@
 .custom-offcanvas{  
     max-width: 300px;
 } 
+
+.alpha-filter{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(26,1fr);
+    grid-column-gap: 0.7rem;
+}

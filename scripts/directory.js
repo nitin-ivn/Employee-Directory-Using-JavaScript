@@ -21,4 +21,15 @@ export function renderDirectory(employee){
     document.querySelector('.js-details-grid').innerHTML = employeeHTML;
 }
 
+function renderFilter(){
+    let filerHTML = "";
+    for (let i = 65; i <= 90; i++) {
+        filerHTML += `
+            <button class = "btn btn-dark js-alp">${String.fromCharCode(i)}</button>
+        `;
+    }
+    document.querySelector(".alpha-filter").innerHTML = filerHTML;
+}
+
 renderDirectory(employee);
+renderFilter();

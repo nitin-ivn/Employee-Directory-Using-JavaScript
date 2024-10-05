@@ -39,8 +39,26 @@ function removeSort(){
     })
 }
 
+function sortByAlphabet(alp){
+    let filteredEmployeeByAlpabet = employee.filter((emp) => {
+        let ap = emp.name[0].toUpperCase();
+        return ap === alp.toUpperCase();
+    });
+
+    renderDirectory(filteredEmployeeByAlpabet);
+}
+
+function takeInputA(){
+    document.querySelectorAll(".js-alp").forEach((button) =>{
+        button.addEventListener('click', ()=>{
+            sortByAlphabet(button.innerHTML);
+        });
+    })
+}
+
 sortByDepartment();
 sortByRole();
 removeSort();
+takeInputA();
 
 

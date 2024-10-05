@@ -19,6 +19,8 @@ body{
     max-width: 1000px;
     width: 1000px;
     height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px white;
 }
 
 .imgslide{
@@ -34,6 +36,7 @@ body{
 
 .com-img{
     max-height: 86vh;
+    border-radius: 6px;
 
 }
 
