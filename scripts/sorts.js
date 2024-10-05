@@ -56,6 +56,7 @@ function takeInputA(){
     })
 }
 
+
 sortByDepartment();
 sortByRole();
 removeSort();

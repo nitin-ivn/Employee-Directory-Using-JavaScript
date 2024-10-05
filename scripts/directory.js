@@ -1,11 +1,11 @@
 import { employee,findEmployee } from "../data/employee.js";
+import { renderDetails } from "./details.js";
 
 export function renderDirectory(employee){
     let employeeHTML = ``;
     employee.forEach((employeeDetails)=> {
         employeeHTML += `
-            <div class="employee-container border p-2 js-emp-container" 
-                onclick="window.open('details.html?empId=${employeeDetails.id}');">
+            <div class="employee-container border p-2 js-emp-container" data-empid = ${employeeDetails.id}>
                 <div class = "img-container">
                     <img class = "employee-image" src="${employeeDetails.image}" alt="">
                 </div>
@@ -19,6 +19,22 @@ export function renderDirectory(employee){
     });
 
     document.querySelector('.js-details-grid').innerHTML = employeeHTML;
+
+    document.querySelectorAll(".js-emp-container").forEach(container => {
+        container.addEventListener('click', () => {
+            const empID = container.dataset.empid;
+            renderDetails(empID);
+            document.querySelector(".page2").style.display = "block";
+            document.querySelector(".overlay").style.display = "block";
+            document.querySelector(".page").classList.add("blur-background");
+        });
+    });
+
+    document.querySelector(".overlay").addEventListener("click" , () => {
+            document.querySelector(".page2").style.display = "none";
+            document.querySelector(".page").classList.remove("blur-background");
+            document.querySelector(".overlay").style.display = "none";
+    })
 }
 
 function renderFilter(){

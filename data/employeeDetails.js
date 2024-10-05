@@ -20,7 +20,7 @@ class EmployeeDetails{
 
     constructor(id,pNo,email,location,hireDate,shift){
         this.id = id;
-        this,pNo = pNo;
+        this.pNo = pNo;
         this.email = email;
         this.location = location;
         this.hireDate = hireDate;
